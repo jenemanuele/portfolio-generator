@@ -1,4 +1,4 @@
-const generatePage = (profile, github) => {
+module.exports = (profile, github) => {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -13,7 +13,7 @@ const generatePage = (profile, github) => {
         <h1>${profile}</h1>
         <h2><a href="https://github.com/${github}">Github</a></h2>
     </body>
-    </html>         `;
+    </html>         
+    `;
 };
 
-module.exorts = generatePage;
